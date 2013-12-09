@@ -116,9 +116,9 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
             <div class="calendar">
                 <table class="cal-header">
                     <tr>
-                        <td class="button" >&lang;</td>
-                        <td colspan=3>Mei 2013</td>
-                        <td class="button">&rang;</td>
+                        <td class="button" id="prev">&lang;</td>
+                        <td colspan=3 id="month">Mei 2013</td>
+                        <td class="button" id="next">&rang;</td>
                     </tr>
                 </table>
                 <table class="cal-days">
@@ -155,6 +155,69 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
         
         <script src="js/main.js"></script>
         <script>
+            //Define months
+            var month=new Array();
+            month[0]="January";
+            month[1]="February";
+            month[2]="March";
+            month[3]="April";
+            month[4]="May";
+            month[5]="June";
+            month[6]="July";
+            month[7]="August";
+            month[8]="September";
+            month[9]="October";
+            month[10]="November";
+            month[11]="December";
+            
+            //Define Days
+            var day=new Array();
+            day[0]="Sunday";
+            day[1]="Monday";
+            day[2]="Tuesday";
+            day[3]="Wednesday";
+            day[4]="Thursday";
+            day[5]="Friday";
+            day[6]="Sunday";
+            
+            //Month is 1 based
+            function daysInMonth(date) {
+                var month = date.getMonth() + 1;
+                var year = date.getFullYear();
+                return new Date(year, month, 0).getDate();
+            }
+            
+            $(document).ready(function(){
+                //Get this date
+                today = new Date();
+                monthText = month[today.getMonth()];
+                firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+                daysInMonth = daysInMonth(today);
+                window.alert(daysInMonth);
+                $("#month").html(monthText + " " + today.getFullYear());
+                
+                
+                var nils= 0;
+                var daysIn = 0;
+                if (firstDayOfMonth.getDay()==0) {
+                    nils=6
+                }else{
+                    nils = firstDayOfMonth.getDay() - 1;
+                }
+                var weeks=new Array();
+                weeks[0]="<tr>";
+                for (i=0;i<nils;i++) {
+                    weeks[0]+="<td class=\"nil\"></td>";
+                }
+                for(i=nils;i<7;i++){
+                    daysIn++;
+                    weeks[0]+="<td>"+ daysIn+"</td>";
+                }
+                weeks[0]+="</tr>\n";
+                
+                window.alert(weeks[0]);
+                
+            })
             $(".cal-header").css("height", $(window).height()*0.1 + "px");
             $(".cal-numbers").css("height", $(window).height()*0.5 + "px");
             $(".event").click(function(){
