@@ -204,6 +204,15 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
             events[1]= {date: new Date(new Date(events[0].date).setDate(new Date(events[0].date).getDate() + 14)), eventID: 2, message:"verjaardag"};
             events[2]= {date: new Date(new Date(events[0].date).setMonth(new Date(events[0].date).getMonth() + 1)), eventID: 3, message:"feestje"};
             
+            //Define test Birthdays
+            //%TODO% Birthdays should come from server
+            //%TODO% Find right birthday format
+            var birthdays=new Array();
+            //birthdays[0]= {date: new Date(1991-05-04), birthdayID: 1, user:"Wouter Vandenneucker"};
+            //birthdays[1]= {date: new Date(), birthdayID: 2, user:"Els Vangrunderbeek" }
+            //birthdays[2]= new Date();
+            
+            
             //get the days in a month
             function getDaysInMonth(date) {
                 var month = date.getMonth() + 1;
@@ -307,6 +316,24 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
                             if(day.html() == events[i].date.getDate()){
                                 day.addClass("event");
                                 day.attr("eventID",i);
+                            }
+                        })
+                    }
+                }
+            }
+            
+            //Add Birthdays to the current Calendar
+            function addBirthdays(date){
+                for ( var i = 0, l = birthdays.length; i < l; i++ ) {
+                    //if same month
+                    if (birthdays[i].date.getMonth() == date.getMonth()) {
+                        
+                        //search the right day and add a class to it's td
+                        $(".cal-numbers tbody tr td").each(function(){
+                            day = $(this); 
+                            if(day.html() == birthdays[i].date.getDate()){
+                                day.addClass("birthday");
+                                day.attr("birthdayID",i);
                             }
                         })
                     }
