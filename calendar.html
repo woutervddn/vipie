@@ -72,11 +72,11 @@
             font-weight: bold;
         }
         
-        .event{
+        .event, .birthday{
             font-weight: bold;
             background: rgba(255,255,255,0.3);
         }
-        .event:hover{
+        .event:hover, .birthday:hover{
             cursor: pointer;
         }
         .button:hover{
@@ -199,19 +199,21 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
             
             //Define test Events
             //%TODO% Events should come from server
-            var events=new Array();
-            events[0]= {date: new Date(), eventID: 1, message:"feestje"};
-            events[1]= {date: new Date(new Date(events[0].date).setDate(new Date(events[0].date).getDate() + 14)), eventID: 2, message:"verjaardag"};
-            events[2]= {date: new Date(new Date(events[0].date).setMonth(new Date(events[0].date).getMonth() + 1)), eventID: 3, message:"feestje"};
+            //var events=new Array();
+            //events[0]= {date: new Date(), eventID: 1, message:"feestje"};
+            //events[1]= {date: new Date(new Date(events[0].date).setDate(new Date(events[0].date).getDate() + 14)), eventID: 2, message:"verjaardag"};
+            //events[2]= {date: new Date(new Date(events[0].date).setMonth(new Date(events[0].date).getMonth() + 1)), eventID: 3, message:"feestje"};
             
             //Define test Birthdays
             //%TODO% Birthdays should come from server
-            //%TODO% Find right birthday format
             var birthdays=new Array();
-            //birthdays[0]= {date: new Date(1991-05-04), birthdayID: 1, user:"Wouter Vandenneucker"};
-            //birthdays[1]= {date: new Date(), birthdayID: 2, user:"Els Vangrunderbeek" }
-            //birthdays[2]= new Date();
+            birthdays[0]= {date: new Date("1991-08-27"), birthdayID: 1, voornaam:"An", naam:"Meersman"};
+            birthdays[1]= {date: new Date("1993-08-17"), birthdayID: 2, voornaam:"Hanne", naam:"Bortels"};
+            birthdays[2]= {date: new Date("1990-09-19"), birthdayID: 3, voornaam:"Kobe", naam:"Swennen"};
+            birthdays[3]= {date: new Date("1990-02-16"), birthdayID: 4, voornaam:"Michèle", naam:"Keunen"};
+            birthdays[4]= {date: new Date("1993-11-19"), birthdayID: 5, voornaam:"Lisa", naam:"Morrhey"};
             
+            //%TODO% birthdays and events collide when on same day.
             
             //get the days in a month
             function getDaysInMonth(date) {
@@ -327,7 +329,7 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
                 for ( var i = 0, l = birthdays.length; i < l; i++ ) {
                     //if same month
                     if (birthdays[i].date.getMonth() == date.getMonth()) {
-                        
+                        console.log(birthdays[i]);
                         //search the right day and add a class to it's td
                         $(".cal-numbers tbody tr td").each(function(){
                             day = $(this); 
@@ -349,6 +351,7 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
                 calendarBody = calendarRender(theDate);
                 $(".cal-numbers tbody").html(calendarBody);
                 addEvents(theDate);
+                addBirthdays(theDate);
             })
             
             //month picker
@@ -360,12 +363,14 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
                     calendarBody = calendarRender(theDate);
                     $(".cal-numbers tbody").html(calendarBody);
                     addEvents(theDate);
+                    addBirthdays(theDate);
                 }else{
                     currentDate = new Date(new Date(theDate).setDate(1));
                     theDate = new Date(new Date(currentDate).setMonth(currentDate.getMonth()-1));
                     calendarBody = calendarRender(theDate);
                     $(".cal-numbers tbody").html(calendarBody);
                     addEvents(theDate);
+                    addBirthdays(theDate);
                 }
             });
             
@@ -378,6 +383,21 @@ In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Inte
                 //slideUp, change content then slide down
                 $(".event-wrapper").slideUp(function(){
                     $(this).html(eventMessage).slideDown();
+                })
+            });
+            
+            $(".cal-numbers tbody").on("click", "tr td.birthday", function() {
+                
+                //find out what id that birthday has and get it's message
+                birthdayID = $(this).attr("birthdayID");
+                birthyear = birthdays[birthdayID].date.getFullYear();
+                age = theDate.getFullYear() - birthyear;
+                
+                birthdayMessage = birthdays[birthdayID].voornaam + " " + birthdays[birthdayID].naam + " wordt " + age + "!" ;
+                
+                //slideUp, change content then slide down
+                $(".event-wrapper").slideUp(function(){
+                    $(this).html(birthdayMessage).slideDown();
                 })
             });
         </script>
