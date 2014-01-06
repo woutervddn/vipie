@@ -12,7 +12,8 @@
         <title>Vipie - Speelplein Zowiezo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+        
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.min.css">
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
 
