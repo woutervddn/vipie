@@ -22,12 +22,6 @@ Template Name: Vipie Template
     </head>
     
     <style>
-        body{
-            background: url('<?php bloginfo('template_url'); ?>/img/deze-vipie-bg.jpg');
-            background-size: cover;
-            background-position: 0%;
-            background-attachment: fixed;
-        }
         
         .middle-center{
             width: 960px;
@@ -55,16 +49,25 @@ Template Name: Vipie Template
             display: inline-block;
             border-radius: 30px;
         }
+        body{
+            background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');
+            background-size: cover;
+            background-position: 0%;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
         
         footer{
             position: absolute;
-            bottom: 0px;
+            bottom: -150px;
             height: 162px;
-            background: rgba(255,255,255,0.3);
+            background: #333;
             width: 100%;
         }
         
         .home-button-wrapper{
+            position: absolute;
+            bottom: 21px;
             height: 120px;
             padding-top: 21px;
             padding-left: 21px;
@@ -119,24 +122,56 @@ Template Name: Vipie Template
             margin-left: 12px;
         }
         
+        article{
+            background: rgba(0,0,0,0.5);
+            color: white;
+            width: 27%;
+            max-height: 70%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            padding: 17px 17px;
+            /*border-bottom: 17px solid rgba(0,0,0,0);*/
+            /*border-top: 17px solid rgba(0,0,0,0);*/
+            position: absolute;
+            top: 7%;
+            right: 5%;
+            margin-bottom: 20px;
+        }
+/*    WE MIGHT WANT TO IMPLEMENT A JS SCROLLBAR... :/     */
+                    /*Chrome scrollbar*/
+            article::-webkit-scrollbar { width: 15px; right: -20px; border: none;}
+            article::-webkit-scrollbar-button {  display: none; background-color: #FFF; }
+            article::-webkit-scrollbar-track { background-color: rgba(0,0,0,0.3); border: none;}
+            article::-webkit-scrollbar-track-piece { display: none; background-color: rgba(0,0,0,0.3);}
+            article::-webkit-scrollbar-thumb { height: 150px; background-color: #FFF; border-radius: 0; border: none;}
+            article::-webkit-scrollbar-corner { display: none; background-color: #999;}}
+            article::-webkit-resizer { display: none; background-color: #666;}
+        
+        article .title{
+            font-weight: bold;
+            font-size: 28px;
+        }
+        
+        article p{
+            font-size: 20px;
+        }
+        
     </style>
     
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
-        <div class="middle-center">
-            <div class="logo">
-                <img src="<?php bloginfo('template_url'); ?>/img/vipie-nocircle.png" />
-                <h1><span>1</span></h1>
-            </div>            
-        </div>
         
+        <article>
+            <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
+            </p><p>
+In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p><p>
+In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
+        </article>
+            
         <footer>
-            <div class="home-button-wrapper">
-                <a href="/"><img src="<?php bloginfo('template_url'); ?>/img/vipie120.png" /></a>
-            </div>
             <div class="article-wrapper">
                 <a class="button" id="before" href="#"></a>
                 <div class="article-list">
@@ -166,6 +201,9 @@ Template Name: Vipie Template
                 <a class="button" id="after" href="#"></a>
             </div>
         </footer>
+        <div class="home-button-wrapper">
+            <a href="/"><img src="<?php bloginfo('template_url'); ?>/img/vipie120.png" /></a>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
@@ -174,13 +212,30 @@ Template Name: Vipie Template
         
         <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
         <script>
-            $(".button").click(function(){
+            $(".button").click(function(event){
+                event.preventDefault();
                 if ($(this).attr('id')=="after") {
                     var leftPos = $('.article-list').scrollLeft();
                     $(".article-list").animate({scrollLeft: leftPos + 200}, 800);
                 }else{
                     var leftPos = $('.article-list').scrollLeft();
                     $(".article-list").animate({scrollLeft: leftPos - 200}, 800);
+                }
+            });
+            
+            footerup = false;
+            $("footer").hover(function(){
+                if (footerup==false) {
+                    footerup = true;
+                    $("footer").css({backgroundColor: "rgba(255,255,255,0.3)"});
+                    $("footer").animate({bottom: 0}, 200);                    
+                }
+            },function(){
+                if (footerup==true) {
+                    footerup = false;
+                    $("footer").animate({bottom: -150}, 200, function(){
+                        $("footer").css({backgroundColor: "#333333"});
+                    });
                 }
             });
         </script>
