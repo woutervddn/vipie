@@ -81,6 +81,14 @@
                 <img src="<?php bloginfo('template_url'); ?>/img/vipie300.png" />
             </div>
             <div class="menu-items">
+                <?php query_posts(array('post_type' => 'page', 'order' => 'DESC', 'p' => 64, "depth"=> 1, "limit" => 1; )); ?>
+				    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php the_title(); ?>
+					<br />
+				    <?php endwhile; else: ?>
+					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+				    <?php endif; ?>
+				    <?php wp_reset_query();  // Restore global post data ?>
                 <a href="deze-vipie.html"><img src="<?php bloginfo('template_url'); ?>/img/vipie156.png" /></a>
                 <a href="#" class="future"><img src="<?php bloginfo('template_url'); ?>/img/nieuws.png" /></a>
                 <a href="#" class="future"><img src="<?php bloginfo('template_url'); ?>/img/calendar.png" /></a>
