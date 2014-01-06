@@ -172,7 +172,7 @@ Template Name: Vipie Template
         
         
         
-        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
+        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="1">
             <article style="z-index:9999;">
                 <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
@@ -181,7 +181,7 @@ Template Name: Vipie Template
     In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
             </article>
         </div>
-        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
+        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="2">
             <article style="z-index:9999;">
                 <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
@@ -190,7 +190,7 @@ Template Name: Vipie Template
     In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
             </article>
         </div>
-        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
+        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="3">
             <article style="z-index:9999;">
                 <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
@@ -199,7 +199,7 @@ Template Name: Vipie Template
     In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
             </article>
         </div>
-        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
+        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="4">
             <article style="z-index:9999;">
                 <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
@@ -218,26 +218,10 @@ Template Name: Vipie Template
                 <a class="button" id="before" href="#"></a>
                 <div class="article-list">
                     <ul>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="1"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="2"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="3"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="4"><img src="http://placehold.it/120x120" /></a></li>
                     </ul>
                 </div>
                 <a class="button" id="after" href="#"></a>
