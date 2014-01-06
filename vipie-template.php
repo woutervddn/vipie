@@ -218,10 +218,10 @@ Template Name: Vipie Template
                 <a class="button" id="before" href="#"></a>
                 <div class="article-list">
                     <ul>
-                        <li><a href="1"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="2"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="3"><img src="http://placehold.it/120x120" /></a></li>
-                        <li><a href="4"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="#1"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="#2"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="#3"><img src="http://placehold.it/120x120" /></a></li>
+                        <li><a href="#4"><img src="http://placehold.it/120x120" /></a></li>
                     </ul>
                 </div>
                 <a class="button" id="after" href="#"></a>
