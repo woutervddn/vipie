@@ -276,7 +276,7 @@ Template Name: Vipie Template
                 theArticlePosition = $(".article-container" + theArticleId).position().left;
                 theScroll = theArticlePosition + $(".paper-container").scrollLeft();
                 console.log($(".paper-container").scrollLeft() +" to "+theArticlePosition+" = "+theScroll );
-                $(".paper-container").animate({scrollLeft: theArticlePosition}, 800);
+                $(".paper-container").animate({scrollLeft: theScroll}, 800);
                 
             });
             
