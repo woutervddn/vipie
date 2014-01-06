@@ -267,7 +267,8 @@ Template Name: Vipie Template
             
             $(".article-list ul").on('click', 'li a', function(){
                 theArticleId = $(this).attr("href");
-                console.log($(".article-container " + theArticleId).left());
+                theArticlePosition = $(".article-container" + theArticleId).position().left;
+                $(".paper").scrollTo({left: theArticlePosition + "px" }, 800);
                 
             });
             
