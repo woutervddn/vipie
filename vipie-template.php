@@ -159,6 +159,9 @@ Template Name: Vipie Template
         article p{
             font-size: 20px;
         }
+        .article-container{
+            float:left;
+        }
         
     </style>
     
@@ -241,6 +244,13 @@ Template Name: Vipie Template
             $(document).ready(function(){
                 $(".paper").css({"height":$( window ).height(),"width":$( window ).width()});
                 $(".article-container").css({"height":$( window ).height(),"width":$( window ).width()});
+                
+                listcontentitems="";
+                $(".article-container").each(function(){
+                    window.alert($(this).id());
+                });
+                
+                $(".article-list ul").html();
             })
             $(".button").click(function(event){
                 event.preventDefault();
