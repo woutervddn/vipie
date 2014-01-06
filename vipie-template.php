@@ -269,7 +269,8 @@ Template Name: Vipie Template
                 }
             });
             
-            $(".article-list ul").on('click', 'li a', function(){
+            $(".article-list ul").on('click', 'li a', function(event){
+                event.preventDefault();
                 theArticleId = $(this).attr("href");
                 theArticlePosition = $(".article-container" + theArticleId).position().left;
                 $(".paper-container").animate({scrollLeft: theArticlePosition}, 800);
