@@ -266,7 +266,8 @@ Template Name: Vipie Template
             });
             
             $(".article-list ul").on('click', 'li a', function(){
-                window.alert($(this).html());
+                theArticleId = $(this).attr("href");
+                window.alert(theArticleId);
             });
             
             footerup = false;
