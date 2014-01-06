@@ -253,6 +253,7 @@ Template Name: Vipie Template
                 $(".article-list ul").html(listcontentitems);
                 $(".paper").css({"height":$( window ).height(),"width":$( window ).width() * listitems});
             })
+            
             $(".button").click(function(event){
                 event.preventDefault();
                 if ($(this).attr('id')=="after") {
@@ -262,6 +263,10 @@ Template Name: Vipie Template
                     var leftPos = $('.article-list').scrollLeft();
                     $(".article-list").animate({scrollLeft: leftPos - 200}, 800);
                 }
+            });
+            
+            $$(".article-list ul").on('click', 'li a', function(){
+                window.alert($(this).html());
             });
             
             footerup = false;
