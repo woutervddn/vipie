@@ -267,7 +267,8 @@ Template Name: Vipie Template
             
             $(".article-list ul").on('click', 'li a', function(){
                 theArticleId = $(this).attr("href");
-                window.alert(theArticleId);
+                console.log($(".article-container " + theArticleId).left());
+                
             });
             
             footerup = false;
@@ -275,7 +276,7 @@ Template Name: Vipie Template
                 if (footerup==false) {
                     footerup = true;
                     $("footer").css({backgroundColor: "rgba(255,255,255,0.3)"});
-                    $("footer").animate({bottom: 0}, 200);                    
+                    $("footer").animate({bottom: 0}, 200);
                 }
             },function(){
                 if (footerup==true) {
