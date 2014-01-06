@@ -247,7 +247,7 @@ Template Name: Vipie Template
                 
                 listcontentitems="";
                 $(".article-container").each(function(){
-                    window.alert($(this).id());
+                    window.alert($(this).attr("id"));
                 });
                 
                 $(".article-list ul").html();
