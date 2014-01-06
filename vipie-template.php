@@ -247,10 +247,10 @@ Template Name: Vipie Template
                 
                 listcontentitems="";
                 $(".article-container").each(function(){
-                    window.alert($(this).attr("id"));
+                    listcontentitems+="<li><a href=\"#" + $(this).attr("id") + "\"><img src=\"http://placehold.it/120x120\" /></a></li>"
                 });
                 
-                $(".article-list ul").html();
+                $(".article-list ul").html(listcontentitems);
             })
             $(".button").click(function(event){
                 event.preventDefault();
