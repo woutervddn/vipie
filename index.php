@@ -78,7 +78,7 @@
 
         <div class="middle-center">
             <div class="logo">
-                <img src="img/vipie300.png" />
+                <img src="<?php bloginfo('template_url'); ?>/img/vipie300.png" />
             </div>
             <div class="menu-items">
                 <a href="deze-vipie.html"><img src="<?php bloginfo('template_url'); ?>/img/vipie156.png" /></a>
