@@ -1,3 +1,8 @@
+< ?php
+/*
+Template Name: Vipie Template
+*/
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -6,19 +11,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Vipie - DezeVipie</title>
+        <title>Deze Vipie</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     
     <style>
         body{
-            background: url('img/deze-vipie-bg.jpg');
+            background: url('<?php bloginfo('template_url'); ?>/img/deze-vipie-bg.jpg');
             background-size: cover;
             background-position: 0%;
             background-attachment: fixed;
@@ -99,7 +104,7 @@
             display: block;
             height: 120px;
             width: 23px;
-            background: url("img/arrows.png");
+            background: url("<?php bloginfo('template_url'); ?>/img/arrows.png");
             background-repeat: no-repeat;
             opacity: 0.6;
         }
@@ -123,14 +128,14 @@
 
         <div class="middle-center">
             <div class="logo">
-                <img src="img/vipie-nocircle.png" />
+                <img src="<?php bloginfo('template_url'); ?>/img/vipie-nocircle.png" />
                 <h1><span>1</span></h1>
             </div>            
         </div>
         
         <footer>
             <div class="home-button-wrapper">
-                <a href="#"><img src="img/vipie120.png" /></a>
+                <a href="/"><img src="<?php bloginfo('template_url'); ?>/img/vipie120.png" /></a>
             </div>
             <div class="article-wrapper">
                 <a class="button" id="before" href="#"></a>
@@ -163,11 +168,11 @@
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-        <script src="js/plugins.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
         
-        <script src="js/main.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
         <script>
             $(".button").click(function(){
                 if ($(this).attr('id')=="after") {
