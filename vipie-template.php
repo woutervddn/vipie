@@ -168,7 +168,7 @@ Template Name: Vipie Template
         <![endif]-->
         
         <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg'); z-index: -9999;">
-            <article>
+            <article style="z-index:9999;">
                 <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
                 </p><p>
