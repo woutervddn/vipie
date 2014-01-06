@@ -167,6 +167,11 @@ Template Name: Vipie Template
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         
+        
+        
+        
+        
+        
         <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
             <article style="z-index:9999;">
                 <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
@@ -175,7 +180,39 @@ Template Name: Vipie Template
     In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p><p>
     In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
             </article>
-        </div>    
+        </div>
+        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
+            <article style="z-index:9999;">
+                <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
+                </p><p>
+    In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p><p>
+    In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
+            </article>
+        </div>
+        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
+            <article style="z-index:9999;">
+                <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
+                </p><p>
+    In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p><p>
+    In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
+            </article>
+        </div>
+        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');">
+            <article style="z-index:9999;">
+                <div class="title">Retrospect: Hanne's avonturen in Portugal.</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis urna. Vestibulum gravida id ante ut elementum. Quisque lectus tortor, cursus at ligula nec, lobortis blandit quam. Fusce iaculis arcu mi. Fusce fermentum, dui ut congue bibendum, lectus mi varius nisl, ut venenatis neque lacus nec sapien. Cras suscipit quam nulla, ac adipiscing nulla consectetur a. Curabitur ultrices sit amet ante in fermentum. Aliquam erat volutpat. Suspendisse et lobortis leo, sit amet vestibulum mauris. Nunc lacinia aliquam odio.
+                </p><p>
+    In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p><p>
+    In hac habitasse platea dictumst. Suspendisse potenti. Sed vel velit lacus. Integer et leo vitae est tristique vehicula at eu magna. Donec rhoncus semper justo, eu varius felis ornare blandit. Curabitur purus purus, porta nec quam sed, ultrices pulvinar metus. Donec eget libero imperdiet, viverra massa at, pretium nunc. Cras tincidunt tortor vitae nisl facilisis, mattis suscipit metus cursus. Ut pellentesque dictum diam, vel suscipit nisl egestas non. Suspendisse non augue at justo fringilla fermentum. Nullam euismod libero a neque mollis elementum.</p>
+            </article>
+        </div>
+        
+        
+        
+        
+        
         <footer>
             <div class="article-wrapper">
                 <a class="button" id="before" href="#"></a>
