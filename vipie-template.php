@@ -217,6 +217,9 @@ Template Name: Vipie Template
         
         <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
         <script>
+            $(document).ready(function(){
+                $(".article-container").css({"height":$( window ).height(),"width":$( window ).width()});
+            })
             $(".button").click(function(event){
                 event.preventDefault();
                 if ($(this).attr('id')=="after") {
