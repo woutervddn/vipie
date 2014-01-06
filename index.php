@@ -1,3 +1,6 @@
+<?php
+    require(bloginfo('template_url') . "/logincheck.php");
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -6,19 +9,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Vipie - Login</title>
+        <title>Vipie - Speelplein Zowiezo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     
     <style>
         body{
-            background: url('img/homepage2-bg.jpg');
+            background: url('<?php bloginfo('template_url'); ?>/img/homepage2-bg.jpg');
             background-size: cover;
             background-position: 0%;
             background-attachment: fixed;
@@ -77,19 +80,19 @@
                 <img src="img/vipie300.png" />
             </div>
             <div class="menu-items">
-                <a href="deze-vipie.html"><img src="img/vipie156.png" /></a>
-                <a href="#"><img src="img/nieuws.png" /></a>
-                <a href="#" class="future"><img src="img/calendar.png" /></a>
-                <a href="#" class="future"><img src="img/archief.png" /></a>
+                <a href="deze-vipie.html"><img src="<?php bloginfo('template_url'); ?>/img/vipie156.png" /></a>
+                <a href="#" class="future"><img src="<?php bloginfo('template_url'); ?>/img/nieuws.png" /></a>
+                <a href="#" class="future"><img src="<?php bloginfo('template_url'); ?>/img/calendar.png" /></a>
+                <a href="#" class="future"><img src="<?php bloginfo('template_url'); ?>/img/archief.png" /></a>
             </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-        <script src="js/plugins.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
         
-        <script src="js/main.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
         <script>
             $('body').animate({
             'background-position-x': '100%',
