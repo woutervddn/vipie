@@ -242,15 +242,16 @@ Template Name: Vipie Template
         <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
         <script>
             $(document).ready(function(){
-                $(".paper").css({"height":$( window ).height(),"width":$( window ).width()});
                 $(".article-container").css({"height":$( window ).height(),"width":$( window ).width()});
                 
                 listcontentitems="";
+                listitems=0;
                 $(".article-container").each(function(){
+                    listitems++;
                     listcontentitems+="<li><a href=\"#" + $(this).attr("id") + "\"><img src=\"http://placehold.it/120x120\" /></a></li>"
                 });
-                
                 $(".article-list ul").html(listcontentitems);
+                $(".paper").css({"height":$( window ).height(),"width":$( window ).width() * listitems});
             })
             $(".button").click(function(event){
                 event.preventDefault();
