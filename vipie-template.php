@@ -274,7 +274,7 @@ Template Name: Vipie Template
                 listitems=0;
                 $(".article-container").each(function(){
                     listitems++;
-                    listcontentitems+="<li><a href=\"#" + $(this).attr("id") + "\"><div style=\"background: url(\"" + $(this).attr("thumb") + "\") 50% 50% no-repeat; width: 120px; height: 120px;\"></div></a></li>"
+                    listcontentitems+="<li><a href=\"#" + $(this).attr("id") + "\"><div style=\"background: url(" + $(this).attr("thumb") + ") 50% 50% no-repeat; width: 120px; height: 120px;\"></div></a></li>"
                 });
                 $(".article-list ul").html(listcontentitems);
                 $(".paper").css({"height":$( window ).height(),"width":$( window ).width() * listitems});
