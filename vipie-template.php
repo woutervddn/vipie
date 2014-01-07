@@ -182,7 +182,7 @@ Template Name: Vipie Template
                 <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $parent, 'exclude' => $parent )); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <?php if($post->ID != $parent) : ?>
-                            <div class="article-container" style="background: url('<?php dfiGetFeaturedImages(); ?>');" id="<?php echo $post->ID; ?>">
+                            <div class="article-container" style="background: url('<?php echo dfiGetFeaturedImages()->full; ?>');" id="<?php echo $post->ID; ?>">
                                 <article style="z-index:9999;">
                                     <div class="title"><?php the_title(); ?></div>
                                     <?php the_content(); ?>
