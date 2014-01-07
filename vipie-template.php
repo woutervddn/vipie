@@ -186,7 +186,7 @@ Template Name: Vipie Template
                                 $featuredImages = dfi_get_featured_images();
                                 $featuredURL = $featuredImages[0][full];
                             } ?>
-                            <div class="article-container" style="background: url('<?php echo $featuredURL; ?>'); background-size: cover;" id="<?php echo $post->ID; ?>">
+                            <div class="article-container" style="background: url('<?php echo $featuredURL; ?>'); background-size: cover; background-position: bottom center;" id="<?php echo $post->ID; ?>">
                                 <article style="z-index:9999;">
                                     <div class="title"><?php the_title(); ?></div>
                                     
