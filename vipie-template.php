@@ -179,7 +179,7 @@ Template Name: Vipie Template
             <div class="paper">
                 <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $post->ID )); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="1">
+                        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="<?php echo $post->ID; ?>">
                             <article style="z-index:9999;">
                                 <div class="title"><?php the_title(); ?></div>
                                 <?php the_content(); ?>
