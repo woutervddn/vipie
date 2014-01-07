@@ -182,15 +182,13 @@ Template Name: Vipie Template
                 <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $parent, 'exclude' => $parent )); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <?php if($post->ID != $parent) : ?>
-                            <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="<?php echo $post->ID; ?>">
+                            <?php if( function_exists('dfi_get_featured_images') ) {
+                                $featuredImages = dfi_get_featured_images();
+                                $featuredURL = $featuredImages[0][full];
+                            } ?>
+                            <div class="article-container" style="background: url('<?php echo $featuredURL; ?>');" id="<?php echo $post->ID; ?>">
                                 <article style="z-index:9999;">
                                     <div class="title"><?php the_title(); ?></div>
-                                    
-                                    <?php if( function_exists('dfi_get_featured_images') ) {
-                                        $featuredImages = dfi_get_featured_images();
-                                        
-                                        print_r($featuredImages[0][full]);
-                                    } ?>
                                     
                                     <?php the_content(); ?>
                                 </article>
