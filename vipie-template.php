@@ -159,7 +159,7 @@ Template Name: Vipie Template
         }
         
         article p{
-            font-size: 20px;
+            font-size: medium;
         }
         .article-container{
             float:left;
