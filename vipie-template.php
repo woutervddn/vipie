@@ -76,7 +76,7 @@ Template Name: Vipie Template
         .article-list{
             height: 120px;
             width: 60%;
-            overflow-x: hidden;
+            overflow: hidden;
             position: relative;
             float: left;
             display: inline-block;
