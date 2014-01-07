@@ -187,9 +187,9 @@ Template Name: Vipie Template
                                     <div class="title"><?php the_title(); ?></div>
                                     
                                     <?php if( function_exists('dfi_get_featured_images') ) {
-                                        $featuredImages = dfi_get_featured_images()[0];
+                                        $featuredImages = dfi_get_featured_images();
                                         
-                                        print_r($featuredImages);
+                                        print_r($featuredImages[0]);
                                     } ?>
                                     
                                     <?php the_content(); ?>
