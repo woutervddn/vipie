@@ -181,12 +181,14 @@ Template Name: Vipie Template
                 <?php wp_reset_query();  // Restore global post data ?>
                 <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $parent, 'exclude' => $parent )); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="<?php echo $post->ID; ?>">
-                            <article style="z-index:9999;">
-                                <div class="title"><?php the_title(); ?></div>
-                                <?php the_content(); ?>
-                            </article>
-                        </div>
+                        <?php if($post->ID != $parent) : ?>
+                            <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="<?php echo $post->ID; ?>">
+                                <article style="z-index:9999;">
+                                    <div class="title"><?php the_title(); ?></div>
+                                    <?php the_content(); ?>
+                                </article>
+                            </div>
+                        <?php endif; ?>
                     <?php endwhile;?>
 		<?php endif; ?>
                 <?php wp_reset_query();  // Restore global post data ?>
