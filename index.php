@@ -81,7 +81,7 @@
                 <img src="<?php bloginfo('template_url'); ?>/img/vipie300.png" />
             </div>
             <div class="menu-items">
-                <?php query_posts(array('post_type' => 'page', 'order' => 'DESC', 'depth'=> 1, 'posts_per_page' => 1 )); ?>
+                <?php query_posts(array('post_type' => 'page', 'order' => 'DESC', 'post_parent'=> 0, 'posts_per_page' => 1 )); ?>
 				    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                         <a href="<?php the_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/vipie156.png" /></a>
 				    <?php endwhile;?>
