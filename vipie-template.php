@@ -177,17 +177,17 @@ Template Name: Vipie Template
         
         <div class="paper-container">
             <div class="paper">
-                <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="1">
-                
-                    <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $post->ID )); ?>
-                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $post->ID )); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="1">
                             <article style="z-index:9999;">
                                 <div class="title"><?php the_title(); ?></div>
                                 <?php the_content(); ?>
                             </article>
-                        <?php endwhile;?>
-		    <?php endif; ?>
-                    <?php wp_reset_query();  // Restore global post data ?>
+                        </div>
+                    <?php endwhile;?>
+		<?php endif; ?>
+                <?php wp_reset_query();  // Restore global post data ?>
                 
                 
                     <!--<article style="z-index:9999;">
