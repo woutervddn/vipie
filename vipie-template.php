@@ -177,7 +177,9 @@ Template Name: Vipie Template
         
         <div class="paper-container">
             <div class="paper">
-                <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $post->ID, 'exclude' => $post->ID )); ?>
+                <?php $parent=$post->ID; ?>
+                <?php wp_reset_query();  // Restore global post data ?>
+                <?php query_posts(array('post_type' => 'page', 'order' => 'ASC', 'child_of' => $parent, 'exclude' => $parent )); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <div class="article-container" style="background: url('<?php bloginfo('template_url'); ?>/img/artikel-bg.jpg');" id="<?php echo $post->ID; ?>">
                             <article style="z-index:9999;">
