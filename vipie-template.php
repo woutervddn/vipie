@@ -186,10 +186,10 @@ Template Name: Vipie Template
                                 <article style="z-index:9999;">
                                     <div class="title"><?php the_title(); ?></div>
                                     
-                                    <?php if( !function_exists('dfiGetFeaturedImages') ) {
-                                        //$featuredImages = dfiGetFeaturedImages();
-                                        echo "works";
-                                        //print_r($featuredImages);
+                                    <?php if( function_exists('dfi_get_featured_images') ) {
+                                        $featuredImages = dfi_get_featured_images();
+                                        
+                                        print_r($featuredImages);
                                     } ?>
                                     
                                     <?php the_content(); ?>
