@@ -185,8 +185,9 @@ Template Name: Vipie Template
                             <?php if( function_exists('dfi_get_featured_images') ) {
                                 $featuredImages = dfi_get_featured_images();
                                 $featuredURL = $featuredImages[0][full];
+                                $featuredThumb = $featuredImages[0][thumb];
                             } ?>
-                            <div class="article-container" style="background: url('<?php echo $featuredURL; ?>'); background-size: cover; background-position: bottom center;" id="<?php echo $post->ID; ?>">
+                            <div class="article-container" thumb="<?php echo $featuredThumb; ?>" style="background: url('<?php echo $featuredURL; ?>'); background-size: cover; background-position: bottom center;" id="<?php echo $post->ID; ?>">
                                 <article style="z-index:9999;">
                                     <div class="title"><?php the_title(); ?></div>
                                     
@@ -273,7 +274,7 @@ Template Name: Vipie Template
                 listitems=0;
                 $(".article-container").each(function(){
                     listitems++;
-                    listcontentitems+="<li><a href=\"#" + $(this).attr("id") + "\"><img src=\"http://placehold.it/120x120\" /></a></li>"
+                    listcontentitems+="<li><a href=\"#" + $(this).attr("id") + "\"><img src=\"" + $(this).attr("thumb") + " /></a></li>"
                 });
                 $(".article-list ul").html(listcontentitems);
                 $(".paper").css({"height":$( window ).height(),"width":$( window ).width() * listitems});
