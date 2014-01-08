@@ -164,6 +164,11 @@ Template Name: Vipie Template
         .article-container{
             float:left;
         }
+
+	.alignleft{
+	    float: left;
+            margin-right: 5px;
+	}
         
     </style>
     
