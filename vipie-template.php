@@ -131,7 +131,7 @@ Template Name: Vipie Template
         article{
             background: rgba(0,0,0,0.5);
             color: white;
-            width: 27%;
+            width: 33%;
             max-height: 70%;
             overflow-x: hidden;
             overflow-y: scroll;
